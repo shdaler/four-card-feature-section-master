@@ -26,11 +26,6 @@
   box-sizing: border-box;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-}
-
 html {
   font-family: var(--ff-sans);
   font-weight: var(--fw-normal);
@@ -40,6 +35,7 @@ html {
 
 body {
   margin: 0;
+  padding-block-end: 5rem;
 }
 
 h1,
@@ -61,12 +57,27 @@ h3 {
 header {
   text-align: center;
   margin-block: 6rem;
-  border: 2px solid rgb(80, 43, 43);
+  border: 2px solid rgb(233, 182, 182);
 }
 
 .layout-grid {
+  --gap: 2rem;
   display: flex;
+  gap: var(--gap);
 }
+
 .layout-grid > * {
   flex: 1;
+}
+
+.col {
+  display: grid;
+  align-content: center;
+  gap: var(--gap);
+}
+
+.card {
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 1rem 1.5rem -0.5rem rgb(0 50 100 / 0.15);
 }

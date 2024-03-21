@@ -42,11 +42,12 @@ h1,
 h2,
 h3 {
   color: var(--clr-neutral-900);
-  line-height: 1.1;
+  line-height: 1.2;
 }
 
 .wrapper {
-  min-width: 1100px;
+  padding-inline: 2rem;
+  min-width: 1280px;
   margin-inline: auto;
 }
 
@@ -57,13 +58,31 @@ h3 {
 header {
   text-align: center;
   margin-block: 6rem;
-  border: 2px solid rgb(233, 182, 182);
+}
+
+h1 {
+  font-weight: var(--fw-light);
+  font-size: var(--fs-900);
+}
+
+h1 span {
+  font-weight: var(--fw-bold);
+}
+
+header > p {
+  font-size: var(--fs-500);
 }
 
 .layout-grid {
   --gap: 2rem;
-  display: flex;
+  display: grid;
   gap: var(--gap);
+}
+
+@media (min-width: 880px) {
+  .layout-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 .layout-grid > * {
@@ -86,6 +105,13 @@ header {
 
 .card__title {
   font-size: var(--fs-600);
+  margin: 0;
+}
+
+.card__img {
+  display: block;
+  margin-left: auto;
+  margin-top: 1rem;
 }
 
 .border-teal {

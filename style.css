@@ -42,7 +42,7 @@ h1,
 h2,
 h3 {
   color: var(--clr-neutral-900);
-  line-height: 1.2;
+  line-height: 1.1;
 }
 
 .wrapper {
@@ -52,7 +52,7 @@ h3 {
 }
 
 .wrapper__narrow {
-  max-width: 550px;
+  max-width: 540px;
 }
 
 header {

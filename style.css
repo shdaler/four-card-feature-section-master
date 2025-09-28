@@ -46,7 +46,7 @@ h3 {
 }
 
 .wrapper {
-  padding-inline: 2rem;
+  padding-inline: 2.1rem;
   max-width: 1280px;
   margin-inline: auto;
 }
@@ -57,7 +57,7 @@ h3 {
 
 header {
   text-align: center;
-  margin-block: 6rem;
+  margin-block: 5.8rem;
 }
 
 h1 {
@@ -95,11 +95,11 @@ header > p {
 }
 
 .card {
-  --br: 0.325rem;
+  --br: 0.326rem;
   padding: 2rem;
   border-top: var(--br) solid;
   border-radius: var(--br);
-  box-shadow: 0 1rem 1.5rem -0.5rem rgb(0 50 100 / 0.15);
+  box-shadow: 0 1rem 1.5rem -0.5rem rgba(0, 50, 100, 0.159);
 }
 
 .layout-grid > :nth-child(1) {
